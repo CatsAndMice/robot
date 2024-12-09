@@ -1,3 +1,5 @@
+# 排除node_modules目录，因为它可以在镜像中重新构建
+node_modules
 # Logs
 logs
 *.log

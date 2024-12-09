@@ -1,0 +1,21 @@
+{
+  "robot": [
+    {
+      "access_token": "xx",
+      "secret": "xx",
+      "msgtype": "markdown",
+      "cron": "0 0 16-21 * * 5-7",
+      "content": {
+        "markdown": {
+          "title": "排期提醒",
+          "text": "### 📆 周五排期提醒\n\n 您好！请查看本周的需求排期与任务管理情况，并确保所有任务按时完成。\n\n🔗 [需求排期与任务管理](https://alidocs.dingtalk.com/i/nodes/m9bN7RYPWdqj1j0BFmBnzDnOVZd1wyK0?iframeQuery=sheetId%3Dg77Gkcd%26viewId%3DPzs8kSc)\n\n今日重点：\n- 检查本周任务完成情况\n- 准备下周工作计划\n\n注意事项：\n- 确保所有任务都有明确的截止日期和责任人\n- 及时更新任务进度，确保信息同步\n\n祝大家周末愉快，我们下周再见！\n\n @xx "
+        },
+        "at": {
+          "atMobiles": [
+            "xx"
+          ]
+        }
+      }
+    }
+  ]
+}

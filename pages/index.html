@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        fetch('/api/robot', {
+            method: 'POST',
+            body: JSON.stringify({
+                "cron": "0 0 16-21 * * 5-7",
+                "access_token": "1b4f8675ff47760a1ca7b6bc1ea631d0a6ae73d666fa885e8e35411da2",
+                "secret": "SECa038750a33ad48a24c2182a1fdb71b369cc7ff0281fda028f9243aef24250091",
+                "msgtype": "markdown",
+                "content": {
+                    "markdown": {
+                        "title": "排期提醒",
+                        "text": "### 📆 周五排期提醒\n\n 您好！请查看本周的需求排期与任务管理情况，并确保所有任务按时完成。\n\n🔗 [需求排期与任务管理](https://alidocs.dingtalk.com/i/nodes/m9bN7RYPWdqj1j0BFmBnzDnOVZd1wyK0?iframeQuery=sheetId%3Dg77Gkcd%26viewId%3DPzs8kSc)\n\n今日重点：\n- 检查本周任务完成情况\n- 准备下周工作计划\n\n注意事项：\n- 确保所有任务都有明确的截止日期和责任人\n- 及时更新任务进度，确保信息同步\n\n祝大家周末愉快，我们下周再见！\n\n @13034833806 "
+                    },
+                    "at": {
+                        "atMobiles": [
+                            "13034833806"
+                        ]
+                    }
+                }
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(result => {
+            console.log(result);
+
+        })
+    </script>
+</body>
+
+</html>
